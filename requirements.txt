@@ -2,3 +2,4 @@ zenml
 mlflow
 streamlit
 joblib
+dvc
