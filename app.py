@@ -7,11 +7,18 @@ import numpy as np
 import streamlit as st
 
 
+import os
+import subprocess
+from pathlib import Path
+
+# Add this BEFORE your MovieRecommender class initialization
+if not Path("artifacts/trained_model/model.joblib").exists():  # Update path
+    subprocess.run(["dvc", "pull", "-r", "origin"], check=True)
+
 class MovieRecommender:
     def __init__(self, model_path: str, data_path: str, vectors_path: str):
         """Initialize with paths to model and data"""
-        import joblib
-        import pandas as pd
+
         self.model = joblib.load(model_path)
         self.data = joblib.load(data_path)
         self.vectors = joblib.load(vectors_path)
