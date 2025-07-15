@@ -1,0 +1,4 @@
+[core]
+    remote = origin
+['remote "origin"']
+    url = https://dagshub.com/sayeedhassan329/Content-Based-Movie-Recommender-System.dvc
