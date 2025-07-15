@@ -1,9 +1,9 @@
 # Content-Based-Movie-Recommender-System
 
-The deployment of this project using Streamlit which you can find [here](https://content-based-movie-recommendersystem.streamlit.app/)
+#### The deployment of this project using Streamlit which you can find [here](https://content-based-movie-recommendersystem.streamlit.app/)
 
 
-# How to run?
+## How to run?
 ### STEPS:
 
 Clone the repository
